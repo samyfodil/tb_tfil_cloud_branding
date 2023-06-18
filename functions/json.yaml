@@ -1,0 +1,15 @@
+id: QmRPAuAJ6rSXRGiBGUtnPpko58ef5taDrVHVUryxAy4VJW
+description: return network branding json
+tags: []
+trigger:
+    type: https
+    method: GET
+    paths:
+        - /json
+execution:
+    timeout: 10s
+    memory: 10MB
+    call: getJson
+source: .
+domains:
+    - generated
